@@ -1,0 +1,175 @@
+:root{
+    --ul-height: 60px; /*メニューバーの高さを指定*/
+    --ul-border-radius: 10px; /*メニューバーの角の丸みを指定*/
+    --ul-font-size: 20px; /*メニューバーのフォントサイズを指定*/
+    --schedule-table-color-ladies-begin: #ffccda; /*スケジュール表のレディースビギナークラスの背景色*/
+    --schedule-table-color-ladies-newbie: #ffcce5; /*スケジュール表のレディース初級クラスの背景色*/
+    --schedule-table-color-ladies-med: #ffccff; /*スケジュール表のレディース中級クラスの背景色*/
+    --schedule-table-color-ladies-both: #ffccf2; /*スケジュール表のレディース初級・中級クラスの背景色*/
+    --schedule-table-color-ladies-toe: #ffcced; /*スケジュール表のレディーストゥクラスの背景色*/
+    --schedule-table-color-astie: #ccccff; /*スケジュール表のストレッチングミューズクラスの背景色*/
+    --schedule-table-color-midori: #ccffcc; /*スケジュール表のみどり幼稚園の背景色*/
+    --schedule-table-color-d: #ffffcc; /*スケジュール表のDクラスの背景色*/
+    --schedule-table-color-c: #ffe5cc;; /*スケジュール表のCクラスの背景色*/
+    --schedule-table-color-b: #ffcccc; /*スケジュール表のBクラスの背景色*/
+    --schedule-table-color-a: #ccffff; /*スケジュール表のAクラスの背景色*/
+}
+
+.for-pc{
+    display: block;
+}
+.for-sp{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .for-pc{
+        display: none;
+    }
+    .for-sp{
+        display: block;
+    }
+    .scroll_table td {
+        font-size: 10px;
+    }
+}
+
+/* 全体の背景色を変更 */
+/* フォント？ */
+body{
+    background-color: #f9f9ff;
+}
+
+/* タイトル設定 色， リンクの色*/
+.header_text a{
+    text-decoration: none; /*リンクの下線を消す*/
+    color: black; /*テキストの色を変更する*/
+    text-align: center; /*テキスト中央ぞろえ*/
+    white-space: nowrap; /*勝手に改行しない*/
+}
+/* タイトル マウスホバー */
+.header_text a:hover{
+    background-color: #efeded; /*マウスホバーした時にバックグラウンドの色を変更*/
+}
+
+/* メニューバーの設定 */
+/* ボックス全体の設定 */
+.menubar ul{
+    text-align: center; /*テキスト中央ぞろえ*/
+    list-style: none; /*最初のドットを消す*/
+    white-space: nowrap;/*勝手に改行しない*/
+    background-color: lightslategrey; /*背景色*/
+    padding: 0px; /*上下，左右のパディング 余白*/
+    height: var(--ul-height); /*高さを指定*/
+    border-radius: var(--ul-border-radius); /*角の丸み*/
+    letter-spacing: -0.2em; /*<li>間の隙間を調節 (home.htmlにおけるliの改行由来のスペースを消す)*/
+    font-size: var(--ul-font-size); /*フォントサイズを指定*/
+}
+/* メニュー1つあたりの設定 */
+.menubar li{
+    display: inline-flex; /*メニューを横並びに*/
+    position: relative; /*staticとかfixedが存在する*/
+    background-color:#161647; /*背景色*/
+    width: 20%; /*要素分で等分割*/
+    height: var(--ul-height); /*高さを指定*/
+    letter-spacing: normal; /* ulのletter-spacingを元に戻す*/
+}
+/* 最も左のメニューの設定 */
+.li-left{
+    border-radius: var(--ul-border-radius) 0px 0px var(--ul-border-radius); /*角の丸み 左上, 右上, 右下, 左下*/
+}
+/* 最も右のメニューの設定 */
+.li-right{
+    border-radius: 0px var(--ul-border-radius) var(--ul-border-radius) 0px; /*角の丸み 左上, 右上, 右下, 左下*/
+}
+/* メニューの上にマウスが置かれた時の設定 */
+.menubar li:hover{
+    opacity: 50%; /*透明度を変更*/
+}
+/* リンクテキストの設定 */
+.menubar a{
+    text-decoration: none; /*リンクの下線を消す*/
+    color: white; /*テキストの色を変更する*/
+    padding: 0px 0px; /*上下，左右のパディング 余白*/
+    height: 100%; /*高さを指定*/
+    width: 100%; /*幅を指定*/
+    line-height: var(--ul-height); /*行の高さを指定*/
+}
+/* リンクの上にマウスが置かれた時 */
+
+.nav-link:hover {
+    opacity: 50%; /*透明度を変更*/
+    color: #efeded;
+}
+
+i.humburger-icon {
+    color: #efeded;
+}
+
+nav.hamburger{
+    background-color: #161647;
+}
+
+div#navbarToggleExternalContent {
+    background-color: #e4e4f0;
+}
+
+/* テーブルのホバー時の設定 */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: #e2e1e1;
+}
+
+/* bootstrap設定の上書き */
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    margin-top: .5em; /* オリジナルは0em */
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+h2, h3 {
+    padding-top: 12px;
+    padding-left: 12px;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+}
+
+h4, h5, h6 {
+    padding-top: 12px;
+    padding-left: 12px;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+}
+
+/* フッター */
+footer {
+    background-color: #ccc;
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1%;
+}
+
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.h4_wrapper {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.h5_wrapper {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.h6_wrapper {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+

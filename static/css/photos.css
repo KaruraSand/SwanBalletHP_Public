@@ -1,0 +1,7 @@
+figcaption {
+    background-color: #222;
+    color: #fff;
+    /* border: 1px solid #222; */
+    padding: 3px;
+    text-align: center;
+}

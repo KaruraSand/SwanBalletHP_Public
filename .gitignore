@@ -1,0 +1,11 @@
+*.pyc
+.DS_Store
+node_modules/
+
+# user
+S_*.jpg
+memo.txt
+dummy.png
+#*.json
+jest.config.js
+#*.ts

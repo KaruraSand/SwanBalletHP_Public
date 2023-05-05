@@ -1,0 +1,244 @@
+/*表の設定*/
+.wrap_scroll_table {
+    overflow-x: scroll;
+    /*スクロールするため*/
+    overflow-y: scroll;
+    /*スクロールするため*/
+    margin: 0 auto;
+    /* white-space: nowrap; */
+    /*勝手に改行しない*/
+    height: auto;
+
+}
+
+.scroll_table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* height: 200px; */
+    font-size: small;
+    margin: auto;
+    padding: 0;
+    border-color: #b8b5b5;
+    max-width: 700px;
+    min-width: 300px;
+    width: 100%;
+}
+
+/* 表のヘッダーの体裁 */
+.scroll_table th {
+    height: 25px;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 何故か動かない */
+/* 火曜日は分割するので幅を確保したい */
+/*
+.tuesday {
+    min-width: 70px;
+}
+*/
+
+/* 表のヘッダーを固定する(.wrap_scroll_tableの高さを指定する必要がある) */
+th._sticky {
+    position: sticky;
+    top: 0;
+    background-color: beige;
+}
+
+.scroll_table td {
+    height: 15px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 表のrow columnの体裁 */
+.scroll_table p {
+    margin: 0;
+}
+
+/* 表の枠線 */
+.scroll_table td, th {
+    border-right: 1px solid #e2e1e1;
+    border-left: 1px solid #e2e1e1;
+}
+
+.scroll_table td.Schedule_Ladies_med {
+    background-color: var(--schedule-table-color-ladies-med);
+}
+
+.scroll_table td.Schedule_Ladies_begin {
+    background-color: var(--schedule-table-color-ladies-begin);
+}
+
+.scroll_table td.Schedule_Ladies_newbie {
+    background-color: var(--schedule-table-color-ladies-newbie);
+}
+
+.scroll_table td.Schedule_Ladies_both {
+    background-color: var(--schedule-table-color-ladies-both);
+}
+
+.scroll_table td.Schedule_Ladies_toe {
+    background-color: var(--schedule-table-color-ladies-toe);
+}
+
+.scroll_table td.Schedule_Midori {
+    background-color: var(--schedule-table-color-midori);
+}
+
+.scroll_table td.Schedule_Astie {
+    background-color: var(--schedule-table-color-astie);
+}
+
+.scroll_table td.Schedule_D {
+    background-color: var(--schedule-table-color-d);
+}
+
+.scroll_table td.Schedule_C {
+    background-color: var(--schedule-table-color-c);
+}
+
+.scroll_table td.Schedule_B {
+    background-color: var(--schedule-table-color-b);
+}
+
+.scroll_table td.Schedule_A {
+    background-color: var(--schedule-table-color-a);
+}
+
+table#inner_table {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: 0;
+}
+#inner_table td {
+    height: 15px;
+    border-right: 0px;
+    border-left: 0px;
+}
+td#wrap_inner_table {
+    border: 0;
+}
+
+/* 表の最下部の枠線を消す */
+td.Schedule_table_bottom {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* ??:30の時刻の枠線を消す + 文字を薄くする＋文字の大きさをデフォルトに戻す */
+td.Schedule_time_odd {
+    color: rgb(215, 211, 211);
+    font-size: small;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* ??:00の時刻の枠線を消す */
+td.Schedule_time_even {
+    font-size: medium;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* ??:00の時刻の枠線を表示 */
+[class^="Schedule_time"][class*=":15"] {
+    border-top: 1px solid #8a8a8a;
+}
+/* ??:30の時刻の枠線を表示 */
+[class^="Schedule_time"][class*=":45"] {
+    border-top: 1px dotted #585858;
+}
+/* ??:15, ??:45の時刻の枠線を表示 */
+[class^="Schedule_time"][class*=":30"],
+[class^="Schedule_time"][class*=":00"] {
+    border-top: 1px dashed #cdcdcd;
+}
+
+/* 時刻の列名の枠線を消す */
+th.Schedule_time {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+table.legend-table {
+    max-width: 600px;
+    font-size: medium;
+    table-layout: fixed;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legend-table td {
+    height: 12px;
+    padding: 2px;
+}
+
+.legend-table th {
+    height: 12px;
+    padding: 2px;
+}
+
+.legend-table td.Schedule_Ladies_newbie {
+    background-color: var(--schedule-table-color-ladies-newbie);
+}
+
+.legend-table td.Schedule_Ladies_med {
+    background-color: var(--schedule-table-color-ladies-med);
+}
+
+.legend-table td.Schedule_Ladies_both {
+    background-color: var(--schedule-table-color-ladies-both);
+}
+
+.legend-table td.Schedule_Ladies_toe {
+    background-color: var(--schedule-table-color-ladies-toe);
+}
+
+.legend-table td.Schedule_Midori {
+    background-color: var(--schedule-table-color-midori);
+}
+
+.legend-table td.Schedule_Astie {
+    background-color: var(--schedule-table-color-astie);
+}
+
+.legend-table td.Schedule_D {
+    background-color: var(--schedule-table-color-d);
+}
+
+.legend-table td.Schedule_C {
+    background-color: var(--schedule-table-color-c);
+}
+
+.legend-table td.Schedule_B {
+    background-color: var(--schedule-table-color-b);
+}
+
+.legend-table td.Schedule_A {
+    background-color: var(--schedule-table-color-a);
+}
+
+.split-cell {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.split-cell div {
+    flex-basis: calc(50% - 4px); /* 4pxは左右の余白の分 */
+}

@@ -1,0 +1,6 @@
+/* 画像を左右で中央ぞろえにする */
+/* imgの親要素であるhome_photoのtext-alignをcenterにする */
+.home_photo {
+    text-align: center;
+}
+

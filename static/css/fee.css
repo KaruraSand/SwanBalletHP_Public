@@ -1,0 +1,42 @@
+/* 料金の表の設定 */
+.fee_table {
+    border-collapse: collapse;
+    /* セルの線を重ねる */
+    table-layout: fixed;
+    /* height: 200px; */
+    font-size: medium;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 15px;
+    border-color: #b8b5b5;
+    /* width: 700px; */
+}
+
+/* 料金の表のthの設定 */
+.fee_table th {
+    height: 25px;
+    font-size: medium;
+    padding: 15px;
+    /*上下，左右のパディング 余白*/
+    text-align: center;
+    /* 中央寄せ */
+    vertical-align: middle;
+    /* 縦方向の中央寄せ */
+    border-width: 1px 0px;
+    /* 枠線指定 */
+}
+
+/* 料金の表のtdの設定 */
+.fee_table td {
+    height: 20px;
+    font-size: medium;
+    padding: 15px;
+    /*上下，左右のパディング 余白*/
+    text-align: center;
+    /* 中央寄せ */
+    vertical-align: middle;
+    /* 縦方向の中央寄せ */
+    /* line-height: 25%; */
+    border-width: 1px 0px;
+    /* 枠線指定 */
+}
