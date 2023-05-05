@@ -61,7 +61,7 @@ body{
     padding: 0px; /*上下，左右のパディング 余白*/
     height: var(--ul-height); /*高さを指定*/
     border-radius: var(--ul-border-radius); /*角の丸み*/
-    letter-spacing: -0.2em; /*<li>間の隙間を調節 (home.htmlにおけるliの改行由来のスペースを消す)*/
+    letter-spacing: -0.2em; /*<li>間の隙間を調節 (index.htmlにおけるliの改行由来のスペースを消す)*/
     font-size: var(--ul-font-size); /*フォントサイズを指定*/
 }
 /* メニュー1つあたりの設定 */
