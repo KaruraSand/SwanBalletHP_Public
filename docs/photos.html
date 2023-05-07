@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="jp">
 <head>
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="スワンバレエスタジオの紹介ページです.千葉県白井市西白井でレッスンしています.">
+    <meta name="description" content="スワンバレエスタジオの紹介サイトです。このページはスケジュールについてです。">
+    
     <!-- setting bootstrap -->
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -13,10 +14,13 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
+    <!-- load my style -->
     <link rel="stylesheet" href="./static/css/general.css">
-    <link rel="stylesheet" href="./static/css/photos.css">
-    <title>Swan Ballet</title>
+    <link rel="stylesheet" href="./static/css/schedule.css">
+    
+    <title>Swan Ballet Schedule</title>
 </head>
 <body>
     <!-- ヘッダー スワンバレエ -->
@@ -28,7 +32,7 @@
         </h1>
     </header>
 
-    <!-- コンテンツメニュー <nav>はナビゲーションの意 -->
+    <!-- コンテンツメニュー(PC用) <nav>はナビゲーションの意 -->
     <nav class="menubar for-pc">
         <ul>
             <li class="li-left"><a href="index.html">ホーム</a></li>
@@ -38,7 +42,7 @@
             <li class="li-right"><a href="photos.html">フォトギャラリー</a></li>
         </ul>
     </nav>
-    <!-- コンテンツメニュー <nav>はナビゲーションの意 -->
+    <!-- コンテンツメニュー(スマートフォン用、ハンバーガーメニュー) <nav>はナビゲーションの意 -->
     <nav class="navbar hamburger for-sp">
         <div class="container-fluid">
             <!-- ハンバーガーメニューの切り替えボタン -->
@@ -72,91 +76,433 @@
         </div>
     </div>
 
-    <h2>フォトギャラリー</h2>
-    今までの発表会の写真です!<br>
-    個人情報保護と肖像権保護のためぼかしてあります。<br>
-    無断転載・無断使用を固く禁じます。また、まとめサイト等への引用を厳禁いたします。
-
-    <div class="photo_gallery h4_wrapper">
-        <h4>第19回発表会 2021年6月</h4>
-        <img src="./static/images/recital/19th_Nutcracker_1.jpg" alt="第19回発表会の写真" title="第19回発表会の写真">
-        <figcaption>くるみ割り人形</figcaption>
-        <img src="./static/images/recital/19th_Nutcracker_2.jpg" alt="第19回発表会の写真" title="第19回発表会の写真">
-        <figcaption>くるみ割り人形</figcaption>
-        <img src="./static/images/recital/19th_Dance_of_Time_Opera_Gioconda.jpg" alt="第19回発表会の写真" title="第19回発表会の写真">
-        <figcaption>歌劇「ジョコンダ」より時の踊り</figcaption>
-
-        <h4>第18回発表会 2019年6月</h4>
-        <img src="./static/images/recital/18th_Swan_Lake_1.jpg" alt="第18回発表会の写真" title="第18回発表会の写真">
-        <figcaption>白鳥の湖</figcaption>
-        <img src="./static/images/recital/18th_Swan_Lake_2.jpg" alt="第18回発表会の写真" title="第18回発表会の写真">
-        <figcaption>白鳥の湖</figcaption>
-        <img src="./static/images/recital/18th_Viennese_Research.jpg" alt="第18回発表会の写真" title="第18回発表会の写真">
-        <figcaption>ウィーンの調べ</figcaption>
-
-        <h4>第17回発表会 2017年6月</h4>
-        <img src="./static/images/recital/17th_Coppelia_2.jpg" alt="第17回発表会の写真" title="第17回発表会の写真">
-        <figcaption>コッペリア</figcaption>
-        <img src="./static/images/recital/17th_Coppelia_5.jpg" alt="第17回発表会の写真" title="第17回発表会の写真">
-        <figcaption>コッペリア</figcaption>
-
-        <h4>第16回発表会 2015年6月</h4>
-        <img src="./static/images/recital/16th_Don_Quijote_2.jpg" alt="第16回発表会の写真" title="第16回発表会の写真">
-        <figcaption>ドン・キホーテ</figcaption>
-        <img src="./static/images/recital/16th_In_Your_Dreams.jpg" alt="第16回発表会の写真" title="第16回発表会の写真">
-        <figcaption>夢の中で</figcaption>
-        <img src="./static/images/recital/16th_Astier_Class_Titans.jpg" alt="第16回発表会の写真" title="第16回発表会の写真">
-        <figcaption>バーアスティエクラス (ストレッチング ミューズクラス) タイタンズ</figcaption>
-
-
-        <h4>第15回発表会 2013年10月</h4>
-        <img src="./static/images/recital/15th_Nutcracker_1.jpg" alt="第15回発表会の写真" title="第15回発表会の写真">
-        <figcaption>くるみ割り人形</figcaption>
-        <img src="./static/images/recital/15th_Nutcracker_2.jpg" alt="第15回発表会の写真" title="第15回発表会の写真">
-        <figcaption>くるみ割り人形</figcaption>
-
-        <h4>第14回発表会 2012年5月</h4>
-        <img src="./static/images/recital/14th_Sleeping_Beauty.jpg" alt="第14回発表会の写真" title="第14回発表会の写真">
-        <figcaption>眠れる森の美女</figcaption>
-        <img src="./static/images/recital/14th_Viennese_Research.jpg" alt="第14回発表会の写真" title="第14回発表会の写真">
-        <figcaption>ウィーンの調べ</figcaption>
-        <img src="./static/images/recital/14th_Bar_Astier_Class_Libertango.jpg" alt="第14回発表会の写真" title="第14回発表会の写真">
-        <figcaption>バーアスティエクラス (ストレッチング ミューズクラス) リベルタンゴ</figcaption>
-
-        <h4>第13回発表会 2010年10月</h4>
-        <img src="./static/images/recital/13th_Cinderella_1.jpg" alt="第13回発表会の写真" title="第13回発表会の写真">
-        <figcaption>シンデレラ</figcaption>
-        <img src="./static/images/recital/13th_Cinderella_3.jpg" alt="第13回発表会の写真" title="第13回発表会の写真">
-        <figcaption>シンデレラ</figcaption>
-        <img src="./static/images/recital/13th_Dance_of_Time.jpg" alt="第13回発表会の写真" title="第13回発表会の写真">
-        <figcaption>歌劇「ジョコンダ」より時の踊り</figcaption>
-
-        <h4>第12回発表会 2009年5月</h4>
-        <img src="./static/images/recital/12th_Coppelia.jpg" alt="第12回発表会の写真" title="第12回発表会の写真">
-        <figcaption>コッペリア</figcaption>
-        <img src="./static/images/recital/12th_Matinee_Soiree_Musical.jpg" alt="第12回発表会の写真" title="第12回発表会の写真">
-        <figcaption>マチネ・ソワレ・ミュージカル</figcaption>
-        <img src="./static/images/recital/12th_Les_Sylphides_3.jpg" alt="第12回発表会の写真" title="第12回発表会の写真">
-        <figcaption>レ・シルフィード</figcaption>
-
-        <h4>第11回発表会 2007年11月</h4>
-        <img src="./static/images/recital/11th_Don_Quijote_1.jpg" alt="第11回発表会の写真" title="第11回発表会の写真">
-        <figcaption>ドン・キホーテ</figcaption>
-        <img src="./static/images/recital/11th_Don_Quijote_2.jpg" alt="第11回発表会の写真" title="第11回発表会の写真">
-        <figcaption>ドン・キホーテ</figcaption>
-
-        <h4>第10回発表会 2006年5月</h4>
-        <img src="./static/images/recital/10th_Nutcracker.jpg" alt="第10回発表会の写真" title="第10回発表会の写真">
-        <figcaption>くるみ割り人形</figcaption>
-        
+    <h2>レッスンスケジュール</h2>
+ 
+    <ul>
+        <li>以下は2022年4月1日現在のものです。</li>
+    </ul>
+    <div class="schedule_list h4_wrapper">
+        <h4>クラスの説明</h4>
+        <ul>
+            <li>子どものクラスは、年齢および習熟度に応じてA, B, C, Dの3つのクラスに分かれています。</li>
+            <li>レディースクラスはビギナー、初級、中級クラスがあります。</li>
+            <li>みどり幼稚園クラスはみどり幼稚園所属の方のみのクラスです。</li>
+            <li>ストレッチング ミューズクラスは座ったり寝たりしながら身体をほぐし、美しい身体維持をアシストするクラスです。</li>
+            <li>初心者の方でも気軽にレッスンに受けられます。</li>
+        </ul>
     </div>
 
+    <div class="h4_wrapper">
+        <h4>レッスンスケジュール</h4>
+        <div class="parent-legend-table">
+            <table class="table legend-table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>例</th>
+                        <th>クラス</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="Schedule_Ladies">レ</td>
+                        <td class="Schedule_Ladies">レディースクラス</td>
+                    <tr>
+                        <td class="Schedule_Astie">ミュ</td>
+                        <td class="Schedule_Astie">ストレッチング ミューズクラス</td>
+                    </tr>
+                    <tr>
+                        <td class="Schedule_Midori">みどり</td>
+                        <td class="Schedule_Midori">みどり幼稚園 (鎌ヶ谷)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="wrap_scroll_table" id="wrap_scroll_table">
+        <table class="scroll_table" id="scroll_table_id">
+            <thead class="Schedule_time _sticky">
+                <tr class="Schedule_time _sticky">
+                    <th class="Schedule_time"></th>
+                    <th class="_sticky">月曜</th>
+                    <th class="_sticky tuesday">火曜</th>
+                    <th class="_sticky">水曜</th>
+                    <th class="_sticky">木曜</th>
+                    <th class="_sticky">金曜</th>
+                    <th class="_sticky">土曜</th>
+                    <th class="_sticky">日曜</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">10:30</td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_10:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_10:45 Schedule_Ladies_med" rowspan="6" style="font-size: 10px;">レ(中級)</td>
+                    <td class="Schedule_time_10:45 Schedule_Ladies_newbie" rowspan="6" style="font-size: 10px;">レ(初級)</td>
+                    <td class="Schedule_time_10:45 Schedule_Ladies_med" rowspan="6" style="font-size: 10px;">レ(中級)</td>
+                    <td class="Schedule_time_10:45 Schedule_Ladies_both" rowspan="6" style="font-size: 10px;">レ(初級・中級)</td>
+                    <td class="Schedule_time_10:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">11:00</td>
+                    <td class="Schedule_time_11:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_11:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_11:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_11:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_11:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_11:15 Schedule_Astie" rowspan="5" style="font-size: 10px;">ミュ</td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">11:30</td>
+                    <td class="Schedule_time_11:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_11:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_11:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_11:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">12:00</td>
+                    <td class="Schedule_time_12:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:00" style="font-size: 10px;"></td>
+                </td>
+                <tr>
+                    <td class="Schedule_time_12:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:15 Schedule_Ladies_toe" rowspan="4" style="font-size: 10px;">レ(トゥクラス)</td>
+                    <td class="Schedule_time_12:15 Schedule_Ladies_toe" rowspan="4" style="font-size: 10px;">レ(トゥクラス)</td>
+                    <td class="Schedule_time_12:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">12:30</td>
+                    <td class="Schedule_time_12:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_12:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_12:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">13:00</td>
+                    <td class="Schedule_time_13:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_13:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:15 Schedule_Midori" rowspan="4" style="font-size: 10px;">みどり<br>(鎌ヶ谷)</td>
+                    <td class="Schedule_time_13:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">13:30</td>
+                    <td class="Schedule_time_13:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_13:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_13:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">14:00</td>
+                    <td class="Schedule_time_14:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:00" style="font-size: 10px;"></td>
+                </tr>
+                    <tr>
+                    <td class="Schedule_time_14:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:15 Schedule_D" rowspan="4" style="font-size: 10px;">Dクラス</td>
+                    <td class="Schedule_time_14:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">14:30</td>
+                    <td class="Schedule_time_14:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_14:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_14:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">15:00</td>
+                    <td class="Schedule_time_15:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:00" style="font-size: 10px;"></td>
+                </tr>
+                    <tr>
+                    <td class="Schedule_time_15:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:15 Schedule_C" rowspan="5" style="font-size: 10px;">Cクラス</td>
+                    <td class="Schedule_time_15:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">15:30</td>
+                    <td class="Schedule_time_15:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_15:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_15:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">16:00</td>
+                    <td class="Schedule_time_16:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_16:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">16:30</td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_16:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_16:45 Schedule_B" rowspan="6" style="font-size: 10px;">Bクラス</td>
+                    <td class="Schedule_time_16:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">17:00</td>
+                    <td class="Schedule_time_17:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_17:15" style="font-size: 10px;"></td>
+                    <td rowspan="7" id="wrap_inner_table">
+                        <table id="inner_table">
+                            <tbody>
+                                <tr>
+                                    <td class="Schedule_time_17:15 Schedule_Ladies_begin" rowspan="5" style="font-size: 10px;">レ(ビギナー)<br>第2・4火曜</td>
+                                    <td class="Schedule_time_17:15" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="Schedule_time_17:30" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="Schedule_time_17:45 Schedule_Astie" rowspan="5" style="font-size: 10px;">ミュ<br>第1・3火曜</td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td class="Schedule_time_18:30" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="Schedule_time_18:45" style="font-size: 10px;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="Schedule_time_17:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">17:30</td>
+                    <td class="Schedule_time_17:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:30 Schedule_C" rowspan="4" style="font-size: 10px;">Cクラス</td>
+                    <td class="Schedule_time_17:30 Schedule_C" rowspan="4" style="font-size: 10px;">Cクラス</td>
+                    <td class="Schedule_time_17:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_17:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_17:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">18:00</td>
+                    <td class="Schedule_time_18:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_18:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:15 Schedule_A" rowspan="6" style="font-size: 10px;">Aクラス</td>
+                    <td class="Schedule_time_18:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">18:30</td>
+                    <td class="Schedule_time_18:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:30 Schedule_B" rowspan="4" style="font-size: 10px;">Bクラス</td>
+                    <td class="Schedule_time_18:30 Schedule_B" rowspan="4" style="font-size: 10px;">Bクラス</td>
+                    <td class="Schedule_time_18:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_18:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_18:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">19:00</td>
+                    <td class="Schedule_time_19:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_19:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:15 Schedule_Ladies_begin" rowspan="5" style="font-size: 10px;">レ(ビギナー)<br>第1・3火曜</td>
+                    <td class="Schedule_time_19:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">19:30</td>
+                    <td class="Schedule_time_19:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_19:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:45 Schedule_A" rowspan="6" style="font-size: 10px;">Aクラス</td>
+                    <td class="Schedule_time_19:45 Schedule_A" rowspan="6" style="font-size: 10px;">Aクラス</td>
+                    <td class="Schedule_time_19:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_19:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">20:00</td>
+                    <td class="Schedule_time_20:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_20:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:15" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_odd" rowspan="2" style="font-size: 10px;">20:30</td>
+                    <td class="Schedule_time_20:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:30" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:30" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_20:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:45" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_20:45" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_even" rowspan="2" style="font-size: 10px;">21:00</td>
+                    <td class="Schedule_time_21:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:00" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:00" style="font-size: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                    <td class="Schedule_time_21:15" style="font-size: 10px;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="./static/js/adjust_font_size.js"></script>
     <!-- フッター -->
     <div>
         <footer>
             <p>© All rights reserved by swan ballet studio</p>
         </footer>
     </div>
-    
+
 </body>
 </html>

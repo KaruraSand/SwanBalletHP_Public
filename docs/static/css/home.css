@@ -4,3 +4,7 @@
     text-align: center;
 }
 
+/* 画像の大きさを小さくする */
+.home_photo img {
+    width: 30%;
+}
