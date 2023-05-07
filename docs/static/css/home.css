@@ -7,4 +7,6 @@
 /* 画像の大きさを小さくする */
 .home_photo img {
     width: 50%;
+    max-height: 500px;
+    object-fit: contain;
 }
