@@ -10,3 +10,16 @@
     max-height: 500px;
     object-fit: contain;
 }
+
+/* 画像を左右で中央ぞろえにする */
+/* imgの親要素であるhome_photoのtext-alignをcenterにする */
+.trial_lesson_photo {
+    text-align: center;
+}
+
+/* 画像の大きさを小さくする */
+.trial_lesson_photo img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
