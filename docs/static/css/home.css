@@ -24,3 +24,15 @@
     object-fit: contain;
 }
 
+/* 画像を左右で中央ぞろえにする */
+/* imgの親要素であるhome_photoのtext-alignをcenterにする */
+.happyoukai_flyer_photo {
+    text-align: center;
+}
+
+/* 画像の大きさを小さくする */
+.happyoukai_flyer_photo img {
+    /* max-height: 500px; */
+    max-height: 600px;
+    object-fit: contain;
+}
