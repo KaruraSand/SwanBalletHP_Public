@@ -5,3 +5,14 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
+
+/* 中央揃え */
+.recital_photo {
+    text-align: center;
+}
+
+/* 画像の大きさを小さくする */
+.recital_photo img {
+    /* max-width: 600px; */
+    object-fit: contain;
+}

@@ -36,3 +36,14 @@
     max-height: 600px;
     object-fit: contain;
 }
+
+/* 画像を左右で左寄せにする */
+.Miyako_Suzuki_photo {
+    text-align: left;
+}
+
+/* 画像の大きさを小さくする */
+.Miyako_Suzuki_photo img {
+    max-height: 300px;
+    object-fit: contain;
+}
