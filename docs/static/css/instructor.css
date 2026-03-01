@@ -1,0 +1,98 @@
+
+/* 鈴木先生の「写真と文」を横並びにする箱 */
+.Miyako_Suzuki_flex_body {
+  display: flex;
+  flex-direction: row;   /* 横並び */
+  gap: 30px;             /* 写真と文の間を少し広めに */
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+
+/* 画像を左右で左寄せにする */
+.Miyako_Suzuki_photo {
+    flex-shrink: 0;
+    /* text-align: left; */
+}
+
+/* 画像の大きさを小さくする */
+.Miyako_Suzuki_photo img {
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/* 鈴木先生のプロフィール文 */
+.Miyako_Suzuki_profile {
+  flex: 1;               /* 残りの幅を全部使う */
+}
+
+/* モバイル対応：画面が狭いときは縦並びに戻す */
+@media (max-width: 850px) { /* 講師より写真が大きいので、少し早めに縦にするのがコツ */
+  .Miyako_Suzuki_flex_body {
+    flex-direction: column; 
+    align-items: flex-start; /* 左寄せのまま縦に */
+  }
+}
+
+
+/* --- 講師一覧全体の並び --- */
+.instructor_container {
+  display: flex;          /* Flexboxを有効化（中身を並べる準備） */
+  flex-direction: row;    /* 中身（写真と文）を「横」に並べる */
+  flex-wrap: wrap;        /* 入りきらなければ次の行へ */
+  gap: 30px;              /* 講師同士の左右の間隔 */
+  justify-content: flex-start; /* 左寄せ（鈴木先生のスタイルに合わせる） */
+  margin-top: 10px;       /* 上にある講師名(h5)との距離 */
+}
+
+/* --- 講師一人の枠（セット） --- */
+.instructor_card {
+  flex: 1 1 400px;        /* 400px以下になりそうなら改行。空きがあれば広がる */
+  max-width: 500px;       /* 広がりすぎて間延びするのを防ぐ */
+}
+
+/* 写真の入った箱 */
+.instructor_photo {
+  flex-shrink: 0; /* これで画像が小さくなるのを阻止！幅の調整は文字部分のみで行う */
+}
+
+/* --- プロフィール文（幅を制限） --- */
+.instructor_profile {
+  flex: 1;            /* 空いているスペースを埋める */
+  max-width: 350px;   /* 文章の最大幅をスマホサイズ程度に制限 */
+  min-width: 200px;   /* あまりに狭くなりすぎないように最低幅も確保 */
+}
+
+/* 講師紹介のリスト部分 */
+.instructor_profile ul {
+  padding-left: 20px; /* 箇条書きが写真に被らないように */
+  margin: 0;
+}
+
+/* --- カード内の写真と文を横並びにする --- */
+.instructor_flex_body {
+  display: flex;          /* 写真とプロフィールを横並びにする */
+  flex-wrap: wrap;      /* 「写真と文」は横並び */
+  gap: 15px;              /* 写真と文の間の隙間 */
+  margin-top: 10px;       /* 名前(h5)との隙間 */
+}
+
+/* --- 講師の写真サイズ調整 --- */
+.instructor_photo img {
+  width: 100px;           /* 鈴木先生(300px)より小さく */
+  height: auto;           /* 比率を維持 */
+  max-height: 200px;      /* 縦に長くなりすぎないよう制限 */
+  object-fit: contain;    /* 既存のMiyako_Suzuki_photoの設定に合わせる */
+}
+
+/* --- モバイル対応（画面幅が狭いとき） --- */
+@media (max-width: 600px) {
+  .instructor_flex_body {
+    flex-direction: column; /* 写真と文を縦に並べる */
+    align-items: flex-start; /* 左寄せを維持 */
+  }
+  
+  .instructor_card {
+    flex: 1 1 100%;         /* スマホでは1枚で横幅いっぱい */
+  }
+}
